@@ -10,31 +10,31 @@ public class BlackBox {
     public static int numlink;
     public static boolean end;
     public static int score;
-    public static int high_score=-1;
+    public static int high_score = -1;
 
     /**
      * The default constructor which places default values to the class variables
      */
     public BlackBox()
     {
-        this.box=new char[0][0];
-        this.size=0;
-        this.numball=0;
-        this.numlink=0;
-        this.end=false;
-        this.score=0;
+        this.box = new char[0][0];
+        this.size = 0;
+        this.numball = 0;
+        this.numlink = 0;
+        this.end = false;
+        this.score = 0;
     }
     /**
      * The parameterized constructor which places values to the class variables
      */
     public BlackBox(int size, int numball, int numlink, boolean end, int score)
     {
-        this.box=new char[size][size];
-        this.size=size;
-        this.numball=numball;
-        this.numlink=numlink;
-        this.end=end;
-        this.score=score;
+        this.box = new char[size][size];
+        this.size = size;
+        this.numball = numball;
+        this.numlink = numlink;
+        this.end = end;
+        this.score = score;
     }
     /**
      * The main function takes input for the difficulty level and call the functions initialize(int) and
@@ -142,7 +142,79 @@ public class BlackBox {
      * The following definitions are the getters and setter functions which have to be implemented
      *
      */
-    public char[][] getbox() {
+    public char[][] getbox(String difficulty) {
+        char[][] box;
+        if (difficulty.equals("easy")) {
+            box = new char[7][7];
+            box[0][0] = 'X';
+            box[0][6] = 'X';
+            box[6][0] = 'X';
+            box[6][6] = 'X';
+            for (int i = 1; i < 5; i++) {
+                box[0][i] = '#';
+            }
+
+            for (int i = 1; i < 5; i++) {
+                box[i][0] = '#';
+            }
+
+            for (int i = 1; i < 5; i++) {
+                box[6][i] = '#';
+            }
+
+            for (int i = 1; i < 5; i++) {
+                box[i][6] = '#';
+            }
+
+        }
+        else if (difficulty.equals("medium")) {
+            box = new char[9][9];
+            box[0][0] = 'X';
+            box[0][8] = 'X';
+            box[8][0] = 'X';
+            box[8][8] = 'X';
+            for (int i = 1; i < 7; i++) {
+                box[0][i] = '#';
+            }
+
+            for (int i = 1; i < 7; i++) {
+                box[i][0] = '#';
+            }
+
+            for (int i = 1; i < 7; i++) {
+                box[8][i] = '#';
+            }
+
+            for (int i = 1; i < 7; i++) {
+                box[i][8] = '#';
+            }
+
+        }
+        else if (difficulty.equals("hard")) {
+            box = new char[11][11];
+            box[0][0] = 'X';
+            box[0][10] = 'X';
+            box[10][0] = 'X';
+            box[10][10] = 'X';
+            for (int i = 1; i < 9; i++) {
+                box[0][i] = '#';
+            }
+
+            for (int i = 1; i < 9; i++) {
+                box[i][0] = '#';
+            }
+
+            for (int i = 1; i < 9; i++) {
+                box[10][i] = '#';
+            }
+
+            for (int i = 1; i < 9; i++) {
+                box[i][10] = '#';
+            }
+
+        }
+
+        return  box;
     }
     public int getscore() {
 
