@@ -302,7 +302,7 @@ else if (box.length == 11) {
         //Todo:Check for a Hit
         if (hitcheck(i,j)) {
 
-        }8
+        }
         //Todo:Check for a reflection
         if (reflectionCheck(i,j)) {
 
@@ -442,65 +442,89 @@ else if (box.length == 11) {
         //todo: check if the ray causes a Deflection as defined in the handout
         i--;
         j--;
-        int indexOfDeflection = 0;
+        int indexX = 0;
+        int indexY = 0;
         // To do Make case exceptions (if on this side, go that way, other side go that way)!!
         if ((i != 0 || j != 0) && (i != 0 || j != box.length - 1) && (i != box.length - 1 || j != box.length - 1) && (i != box.length - 1 || j != 0)) {
             if (i == 0) {
                 for (int k = 1; k < box.length - 1; k++) {
-                    if (box[k][j + 1] == '0'){
-                        box[i][j] = (char) +('0' + numlink);
-                        indexOfDeflection = k;
+                    if (box[k][j + 1] == '0' && k > 0){
                         numlink++;
+                        box[i][j] = (char) + ('0' + numlink);
+                        indexX = k - 1;
+                        indexY = 0;
+                        box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
-                    if (box[k][j-1] == '0') {
-                        indexOfDeflection = k;
+                    if (box[k][j-1] == '0' && k > 0) {
+                        numlink++;
+                        box[i][j] = (char) + ('0' + numlink);
+                        indexX = k - 1;
+                        indexY = box.length;
+                        box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
                 }
-            } else if (i == box.length - 1) {
+            }
+            else if (i == box.length - 1) {
                 for (int k = box.length; k > 0; k--) {
-                    if (box[k][j + 1] == '0' || box[k][j - 1] == '0') {
-                        box[i][j] = (char) +('0' + numlink);
-                        indexOfDeflection = k;
+                    if (box[k][j + 1] == '0' && k < box.length) {
                         numlink++;
+                        box[i][j] = (char) +('0' + numlink);
+                        indexX = k + 1;
+                        indexY = 0;
+                        box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
-                    if (box[k][j-1] == '0') {
-                        indexOfDeflection = k;
+                    if (box[k][j-1] == '0' && k < box.length) {
+                        numlink++;
+                        box[i][j] = (char) +('0' + numlink);
+                        indexX = k + 1;
+                        indexY = box.length;
+                        box[indexX][indexY] = (char) + ('0' + numlink);
+                        return true;
                     }
                 }
             }else if (j == 0) {
                 for (int k = 1; k < box.length; k++) {
-                    if (box[i+1][k] == '0'){
-                        box[i][j] = (char) +('0' + numlink);
-                        indexOfDeflection = k;
+                    if (box[i+1][k] == '0' && k > 0){
                         numlink++;
+                        box[i][j] = (char) +('0' + numlink);
+                        indexX = 0;
+                        indexY = k - 1;
+                        box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
                     if (box[i-1][k] == '0') {
-                        indexOfDeflection = k;
                         numlink++;
+                        box[i][j] = (char) +('0' + numlink);
+                        indexX = box.length;
+                        indexY = k - 1;
+                        box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
                 }
             }
             else if (j == box.length - 1) {
                 for (int k = box.length; k > 0; k--) {
-                    if (box[i+1][k] == '0'){
-                        box[i][j] = (char) +('0' + numlink);
-                        indexOfDeflection = k;
+                    if (box[i+1][k] == '0' && k < box.length){
                         numlink++;
+                        box[i][j] = (char) +('0' + numlink);
+                        indexX = 0;
+                        indexY = k - 1;
+                        box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
-                    if (box[i-1][k] == '0') {
-                        indexOfDeflection = k;
+                    if (box[i-1][k] == '0' && k < box.length) {
                         numlink++;
+                        box[i][j] = (char) +('0' + numlink);
+                        indexX = 0;
+                        indexY = k - 1;
+                        box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
                 }
             }
-
         }
         return false;
     }
