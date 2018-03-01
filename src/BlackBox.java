@@ -302,7 +302,7 @@ else if (box.length == 11) {
         //Todo:Check for a Hit
         if (hitcheck(i,j)) {
 
-        }
+        }8
         //Todo:Check for a reflection
         if (reflectionCheck(i,j)) {
 
@@ -443,13 +443,18 @@ else if (box.length == 11) {
         i--;
         j--;
         int indexOfDeflection = 0;
+        // To do Make case exceptions (if on this side, go that way, other side go that way)!!
         if ((i != 0 || j != 0) && (i != 0 || j != box.length - 1) && (i != box.length - 1 || j != box.length - 1) && (i != box.length - 1 || j != 0)) {
             if (i == 0) {
                 for (int k = 1; k < box.length - 1; k++) {
-                    if (box[k][j + 1] == '0' || box[k][j - 1] == '0') {
+                    if (box[k][j + 1] == '0'){
                         box[i][j] = (char) +('0' + numlink);
                         indexOfDeflection = k;
                         numlink++;
+                        return true;
+                    }
+                    if (box[k][j-1] == '0') {
+                        indexOfDeflection = k;
                         return true;
                     }
                 }
@@ -461,11 +466,19 @@ else if (box.length == 11) {
                         numlink++;
                         return true;
                     }
+                    if (box[k][j-1] == '0') {
+                        indexOfDeflection = k;
+                    }
                 }
             }else if (j == 0) {
                 for (int k = 1; k < box.length; k++) {
-                    if (box[i+1][k] == '0' || box[i-1][k] == '0') {
+                    if (box[i+1][k] == '0'){
                         box[i][j] = (char) +('0' + numlink);
+                        indexOfDeflection = k;
+                        numlink++;
+                        return true;
+                    }
+                    if (box[i-1][k] == '0') {
                         indexOfDeflection = k;
                         numlink++;
                         return true;
@@ -474,8 +487,13 @@ else if (box.length == 11) {
             }
             else if (j == box.length - 1) {
                 for (int k = box.length; k > 0; k--) {
-                    if (box[i+1][k] == '0' || box[i-1][k] == '0') {
+                    if (box[i+1][k] == '0'){
                         box[i][j] = (char) +('0' + numlink);
+                        indexOfDeflection = k;
+                        numlink++;
+                        return true;
+                    }
+                    if (box[i-1][k] == '0') {
                         indexOfDeflection = k;
                         numlink++;
                         return true;

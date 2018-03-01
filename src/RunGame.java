@@ -65,15 +65,6 @@ public class RunGame {
                     System.out.println(game.straightRay(1,4));
                     System.out.println();
                     System.out.println(game.straightRay(1,5));
-                    System.out.println();
-                    System.out.println(game.deflectionCheck(1,2));
-                    System.out.println();
-                    System.out.println(game.deflectionCheck(1,3));
-                    System.out.println();
-                    System.out.println(game.deflectionCheck(1,4));
-                    System.out.println();
-                    System.out.println(game.deflectionCheck(1,5));
-                    System.out.println();
 
                     for (int i = 0; i < game.box.length; i++) {
                         for (int j = 0; j < game.box.length; j++) {
