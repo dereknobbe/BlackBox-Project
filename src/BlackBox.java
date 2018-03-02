@@ -3,6 +3,7 @@
  *
  */
 import java.util.*;
+//Derek, Listen up. TO DO: Basically, the logic is there, I just need to make sure it can handle cases where multiple events happen bc thats a bitch rn. Figure it out tomorrow.
 public class BlackBox {
     public static char box[][]; // The matrix for the game.
     public static int size;       // to store the number of rows and columns.
@@ -39,16 +40,100 @@ public class BlackBox {
      * The main function takes input for the difficulty level and call the functions initialize(int) and
      * playgame()
      */
- /*   public static void main(String[] args) {
-        Scanner scan= new Scanner(System.in);
-        String difficulty = scan.nextLine();
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         //Todo:start the game print the welcome message and ask for correct difficulty level.
+        System.out.println("Welcome to the Blackbox Game. Please choose the difficulty level: easy/medium/hard or quit to end the game.");
+        String difficulty = scan.nextLine();
+        String coordinates = "";
+        String strCoordinateX;
+        String strCoordinateY;
+        difficulty = difficulty.toLowerCase();
+            if (difficulty.equals("easy")) {
+                BlackBox game = new BlackBox(7, 3, 0, false, 0);
+                game.initialize(difficulty);
+                game.printbox();
+                System.out.println();
+                System.out.println("Choose the new coordinates (row,column) to play the next step or say submit/quit to end the game:");
+                coordinates = scan.nextLine();
+                coordinates = coordinates.toLowerCase();
+                if (coordinates.equals("quit")) {
+                    System.exit(1);
+                }
+                while (!coordinates.equals("quit") && !coordinates.equals("submit")) {
+                    game.check(getXIntFromString(coordinates), getYIntFromString(coordinates));
+                    game.printbox();
+                    System.out.println();
+                    for (int i = 0; i < game.box.length; i++) {
+                        for (int j = 0; j < game.box.length; j++) {
+                            System.out.print(game.box[i][j]);
+                        }
+                        System.out.println();
+                    }
+                    System.out.println("Choose the new coordinates (row,column) to play the next step or say submit/quit to end the game:");
+                    coordinates = scan.nextLine();
+                }
+            } else if (difficulty.equals("medium")) {
+                BlackBox game = new BlackBox(9, 3, 0, false, 0);
+                game.initialize(difficulty);
+                game.printbox();
+                System.out.println();
+                System.out.println("Choose the new coordinates (row,column) to play the next step or say submit/quit to end the game:");
+                coordinates = scan.nextLine();
+                coordinates = coordinates.toLowerCase();
+                if (coordinates.equals("quit")) {
+                    System.exit(1);
+                }
+                while (!coordinates.equals("quit") && !coordinates.equals("submit")) {
+                    game.check(getXIntFromString(coordinates), getYIntFromString(coordinates));
+                    game.printbox();
+                    System.out.println();
+                    for (int i = 0; i < game.box.length; i++) {
+                        for (int j = 0; j < game.box.length; j++) {
+                            System.out.print(game.box[i][j]);
+                        }
+                        System.out.println();
+                    }
+                    System.out.println("Choose the new coordinates (row,column) to play the next step or say submit/quit to end the game:");
+                    coordinates = scan.nextLine();
+                }
+            } else if (difficulty.equals("hard")) {
+                BlackBox game = new BlackBox(11, 3, 0, false, 0);
+                game.initialize(difficulty);
+                game.printbox();
+                System.out.println();
+                System.out.println("Choose the new coordinates (row,column) to play the next step or say submit/quit to end the game:");
+                coordinates = scan.nextLine();
+                coordinates = coordinates.toLowerCase();
+                if (coordinates.equals("quit")) {
+                    System.exit(1);
+                }
+                while (!coordinates.equals("quit") && !coordinates.equals("submit")) {
+                    game.check(getXIntFromString(coordinates), getYIntFromString(coordinates));
+                    game.printbox();
+                    System.out.println();
+                    for (int i = 0; i < game.box.length; i++) {
+                        for (int j = 0; j < game.box.length; j++) {
+                            System.out.print(game.box[i][j]);
+                        }
+                        System.out.println();
+                    }
+                    System.out.println("Choose the new coordinates (row,column) to play the next step or say submit/quit to end the game:");
+                    coordinates = scan.nextLine();
+                }
+            } else if (difficulty.equals("quit")) {
+                System.exit(1);
+            } else {
+                System.out.println("Please enter a valid choice.");
+                difficulty = scan.nextLine();
+            }
+        }
+
         //Todo: end the game if the user says quit.
 
 
         //Todo:call the functions initialize and playgame()
         // Todo: take care of high score
-    } */
     /**
      * The initialize funtion
      */
@@ -107,6 +192,7 @@ public class BlackBox {
             for (int i = 1; i < 8; i++) {
                 box[8][i] = '#';
             }
+
             for (int i = 1; i < 8; i++) {
 
                 for (int j = 1; j < 8; j++) {
@@ -282,22 +368,15 @@ else if (box.length == 11) {
         box[ballThreeX][ballThreeY] = '0';
     }
     /**
-     * The playgame funtion opens the first cell and is the main controller for the game. It calls various function when needed.
-     */
-    public static void playgame() {
-        //Todo:Take input of a guess or hint from the user.
-        //Todo:Check for valid input
-        //Todo:call required functions
-        //Todo:keep tab on score.
-    }
-    /**
      * The check funtion takes in the row and column in the matrix, checks for Hit (H), Reflection (R) or Divergence(#num)
      *
      */
     public static void check(int i,int j) {
+        boolean reflecTruth= false;
+        boolean deflecTruth = false;
         //Todo:place a guess when the input of i and j are valid
         if (placeBall(i,j)) {
-            box[i][j] = '*';
+            box[i - 1][j - 1] = '*';
         }
         //Todo:Check for a Hit
         if (hitcheck(i,j)) {
@@ -305,25 +384,83 @@ else if (box.length == 11) {
         }
         //Todo:Check for a reflection
         if (reflectionCheck(i,j)) {
-
+            reflecTruth = true;
         }
         //Todo:Check for a bounce
+        if (deflectionCheck(i,j)) {
+            deflecTruth = true;
+        }
+        if (reflecTruth && deflecTruth) {
+            numlink--;
+            box[i-1][j-1] = 'R';
+        }
+
+      //  if (straightRay(i,j)) {
+//
+  //      }
         //Todo:Print a statement telling the user they cannot place a fourth ball.
         if (numball == 0) {
             System.out.println("You have placed the maximum number of balls (3). You are out of guesses.");
         }
     }
+    /**
+     * The playgame funtion opens the first cell and is the main controller for the game. It calls various function when needed.
+     */
+    public static void playgame() {
+        //Todo:Take input of a guess or hint from the user.
+        Scanner scan = new Scanner(System.in);
+        //Todo:start the game print the welcome message and ask for correct difficulty level.
+        System.out.println("Welcome to the Blackbox Game. Please choose the difficulty level: easy/medium/hard or quit to end the game.");
+        String difficulty = scan.nextLine();
+        String coordinates = "";
+        String strCoordinateX;
+        String strCoordinateY;
+        difficulty = difficulty.toLowerCase();
+        while (!difficulty.equals("quit")) {
+            if (difficulty.equals("easy")) {
+                BlackBox game = new BlackBox(7, 3, 0, false, 0);
+                game.initialize(difficulty);
+                game.printbox();
+                System.out.println();
+                System.out.println("Choose the new coordinates (row,column) to play the next step or say submit/quit to end the game:");
+                coordinates = scan.nextLine();
+                coordinates = coordinates.toLowerCase();
+                if (coordinates.equals("quit")) {
+                    System.exit(1);
+                }
+                //game.placeBall(getXIntFromString(coordinates),getYIntFromString(coordinates));
+                game.placeBall(3,3);
+                game.printbox();
+            } else if (difficulty.equals("medium")) {
+                BlackBox game = new BlackBox(9, 3, 0, false, 0);
+                game.initialize(difficulty);
+                game.printbox();
+            } else if (difficulty.equals("hard")) {
+                BlackBox game = new BlackBox(11, 3, 0, false, 0);
+                game.initialize(difficulty);
+                game.printbox();
+            } else if (difficulty.equals("quit")) {
+                System.exit(1);
+            } else {
+                System.out.println("Please enter a valid choice.");
+                difficulty = scan.nextLine();
+            }
+        }
+        //Todo:Check for valid input
+        //Todo:call required functions
+        //Todo:keep tab on score.
+    }
     /** The placeball method checks if a guess ball can be placed at a given row and column. Returns
      * false if a ball is already there, else returns true.
      */
     public static boolean placeBall(int i, int j){
-        i = i--;
-        j = j--;
-        if (i < 0 || i > box.length - 1 || j < 0 || j > box.length - 1) {
+        int o = --i;
+        int p = --j;
+        if ((o < 1 || o > box.length - 1) || (p < 1 || p > box.length - 1)) {
             return false;
         }
 
-        else if (box[i][j] == '*') {
+        else if (box[o][p] == '*') {
             return false;
         }
         else {
@@ -382,8 +519,8 @@ else if (box.length == 11) {
                return true;
            }
            else {
-               for (int k = 1; k < box.length; k++) {
-                   if (box[k][j-1] == '0' && box[k][j+1] == '0') {
+               for (int k = 1; k < box.length-1; k++) {
+                   if (box[k+1][j-1] == '0' && box[k+1][j+1] == '0') {
                        box[i][j] = 'R';
                        return true;
                    }
@@ -396,8 +533,8 @@ else if (box.length == 11) {
                 return true;
             }
             else {
-                for (int k = box.length - 1; k > 0; k--) {
-                    if (box[k][i+1] == '0' && box[k][i-1] == '0') {
+                for (int k = box.length - 2; k > 0; k--) {
+                    if (box[k-1][j+1] == '0' && box[k-1][j-1] == '0') {
                         box[i][j] = 'R';
                         return true;
                     }
@@ -410,8 +547,8 @@ else if (box.length == 11) {
                 return true;
             }
             else {
-                for (int k = 1; k < box.length; k++) {
-                    if (box[i+1][k] == '0' && box[i-1][k] == '0') {
+                for (int k = 1; k < box.length-1; k++) {
+                    if (box[i+1][k+1] == '0' && box[i-1][k+1] == '0') {
                         box[i][j] = 'R';
                         return true;
                     }
@@ -424,8 +561,8 @@ else if (box.length == 11) {
                 return true;
             }
             else {
-                for (int k = box.length - 1; k > 0; k--) {
-                    if (box[i+1][k] == '0' && box[i-1][k] == '0') {
+                for (int k = box.length - 2; k > 0; k--) {
+                    if (box[i+1][k+1] == '0' && box[i-1][k+1] == '0') {
                         box[i][j] = 'R';
                         return true;
                     }
@@ -438,7 +575,7 @@ else if (box.length == 11) {
      * The check funtion takes in the row and column in the matrix, checks for Divergence(#num)
      *
      */
-    public boolean deflectionCheck(int i,int j) {
+    public static boolean deflectionCheck(int i,int j) {
         //todo: check if the ray causes a Deflection as defined in the handout
         i--;
         j--;
@@ -452,6 +589,10 @@ else if (box.length == 11) {
                         numlink++;
                         box[i][j] = (char) + ('0' + numlink);
                         indexX = k - 1;
+                        if (indexX == 0) {
+                            numlink--;
+                            return false;
+                        }
                         indexY = 0;
                         box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
@@ -460,18 +601,26 @@ else if (box.length == 11) {
                         numlink++;
                         box[i][j] = (char) + ('0' + numlink);
                         indexX = k - 1;
-                        indexY = box.length;
+                        if (indexX == 0) {
+                            numlink--;
+                            return false;
+                        }
+                        indexY = box.length - 1;
                         box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
                 }
             }
             else if (i == box.length - 1) {
-                for (int k = box.length; k > 0; k--) {
+                for (int k = box.length - 1; k > 0; k--) {
                     if (box[k][j + 1] == '0' && k < box.length) {
                         numlink++;
                         box[i][j] = (char) +('0' + numlink);
                         indexX = k + 1;
+                        if (indexX == 0) {
+                            numlink++;
+                            return false;
+                        }
                         indexY = 0;
                         box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
@@ -480,6 +629,10 @@ else if (box.length == 11) {
                         numlink++;
                         box[i][j] = (char) +('0' + numlink);
                         indexX = k + 1;
+                        if (indexX == box.length) {
+                            numlink--;
+                            return false;
+                        }
                         indexY = box.length;
                         box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
@@ -492,6 +645,10 @@ else if (box.length == 11) {
                         box[i][j] = (char) +('0' + numlink);
                         indexX = 0;
                         indexY = k - 1;
+                        if (indexY == 0) {
+                            numlink++;
+                            return false;
+                        }
                         box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
@@ -500,6 +657,10 @@ else if (box.length == 11) {
                         box[i][j] = (char) +('0' + numlink);
                         indexX = box.length;
                         indexY = k - 1;
+                        if (indexY == box.length) {
+                            numlink++;
+                            return false;
+                        }
                         box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
@@ -512,6 +673,10 @@ else if (box.length == 11) {
                         box[i][j] = (char) +('0' + numlink);
                         indexX = 0;
                         indexY = k - 1;
+                        if (indexY == box.length) {
+                            numlink++;
+                            return false;
+                        }
                         box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
@@ -520,6 +685,10 @@ else if (box.length == 11) {
                         box[i][j] = (char) +('0' + numlink);
                         indexX = 0;
                         indexY = k - 1;
+                        if (indexY == 0) {
+                            numlink++;
+                            return false;
+                        }
                         box[indexX][indexY] = (char) + ('0' + numlink);
                         return true;
                     }
@@ -532,7 +701,7 @@ else if (box.length == 11) {
      * The straightRay funtion takes in the row and column in the matrix, checks for Straight ray
      *
      */
-    public boolean straightRay(int i,int j){
+    public static boolean straightRay(int i,int j){
         //todo: check if the ray is a straight ray as defined in the handout
         i--;
         j--;
@@ -604,5 +773,14 @@ else if (box.length == 11) {
     }
     public void setScore(int score) {
         this.score = score;
+    }
+    public static int getXIntFromString(String coords) {
+        String strCoordinateX = coords.substring(0,1);
+        return Integer.parseInt(strCoordinateX);
+    }
+    public static int getYIntFromString(String coords) {
+        String strCoordinateY = coords.substring(coords.indexOf(',') + 1);
+        return Integer.parseInt(strCoordinateY);
+
     }
 }

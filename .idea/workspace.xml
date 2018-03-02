@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f05a2775-4fc0-46d1-a21c-c36b699d4685" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 2/BlackBox.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project 2/RunGame.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 2/BlackBox.class" afterPath="$PROJECT_DIR$/out/production/Project 2/BlackBox.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project 2/RunGame.class" afterPath="$PROJECT_DIR$/out/production/Project 2/RunGame.class" />
       <change beforePath="$PROJECT_DIR$/src/BlackBox.java" afterPath="$PROJECT_DIR$/src/BlackBox.java" />
-      <change beforePath="$PROJECT_DIR$/src/RunGame.java" afterPath="$PROJECT_DIR$/src/RunGame.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,9 +20,38 @@
       <file leaf-file-name="BlackBox.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BlackBox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="466" column="17" lean-forward="true" selection-start-line="466" selection-start-column="17" selection-end-line="466" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+              <folding>
+                <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+                <element signature="e#6149#6192#0" expanded="false" />
+                <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+                <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+                <element signature="e#27873#27874#0" expanded="true" />
+                <element signature="e#27907#27908#0" expanded="true" />
+                <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+                <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +59,8 @@
       <file leaf-file-name="RunGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RunGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="148">
+              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -53,8 +80,20 @@
       <find>print</find>
       <find>numbal</find>
       <find>random</find>
-      <find>check</find>
       <find>hit</find>
+      <find>playGame</find>
+      <find>difficulty</find>
+      <find>numball</find>
+      <find>numlink</find>
+      <find>main</find>
+      <find>playgame</find>
+      <find>che</find>
+      <find>placeBall</find>
+      <find>placeball</find>
+      <find>check</find>
+      <find>initialize</find>
+      <find>reflection</find>
+      <find>deflect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,8 +116,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="854" />
+    <option name="x" value="98" />
+    <option name="y" value="-9" />
+    <option name="width" value="858" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectView">
@@ -96,8 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -115,11 +154,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -134,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RunGame">
+  <component name="RunManager" selected="Application.BlackBox">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -280,8 +320,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.RunGame" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BlackBox" />
+        <item index="0" class="java.lang.String" itemvalue="Application.BlackBox" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RunGame" />
         <item index="2" class="java.lang.String" itemvalue="Application.Test" />
         <item index="3" class="java.lang.String" itemvalue="Application.test" />
       </list>
@@ -314,18 +354,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32022473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31978023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.70561796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45934066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.082738094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.036309525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -346,7 +386,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BlackBox.java</url>
+          <line>512</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BlackBox.java</url>
+          <line>513</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -355,7 +409,126 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RunGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BlackBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RunGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BlackBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -371,7 +544,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -379,7 +581,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -395,7 +626,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -411,7 +671,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -427,7 +716,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -443,7 +761,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -459,7 +806,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,7 +851,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -491,7 +896,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -499,7 +933,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -507,7 +970,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -515,7 +1007,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -523,7 +1044,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -531,17 +1081,46 @@
     <entry file="file://$PROJECT_DIR$/src/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/RunGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="148">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BlackBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="466" column="17" lean-forward="true" selection-start-line="466" selection-start-column="17" selection-end-line="466" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="85">
+          <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding>
+            <element signature="method#main#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#6149#6192#0" expanded="false" />
+            <element signature="docComment;method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#initialize#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#printbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#randomBalls#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#check#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#playgame#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#placeBall#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#hitcheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#reflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#deflectionCheck#0;class#BlackBox#0" expanded="false" />
+            <element signature="docComment;method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#straightRay#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getscore#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setbox#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#setNumball#0;class#BlackBox#0" expanded="false" />
+            <element signature="e#27873#27874#0" expanded="true" />
+            <element signature="e#27907#27908#0" expanded="true" />
+            <element signature="method#getXIntFromString#0;class#BlackBox#0" expanded="false" />
+            <element signature="method#getYIntFromString#0;class#BlackBox#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
